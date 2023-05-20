@@ -9,7 +9,7 @@ public class SearchInteractor {
   let client = ApolloClient(url: URL(string: "https://swapi-graphql.netlify.app/.netlify/functions/index")!)
   
   public init() {
-    client.fetch(query: CountOfFilmsQuery()) { result in
+    client.fetch(query: ListOfTitlesQuery()) { result in
       switch result {
         case .success(let data):
           print("Data:\n\(data)")
