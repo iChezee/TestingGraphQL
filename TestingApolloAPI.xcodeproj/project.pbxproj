@@ -19,8 +19,8 @@
 		3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingApolloAPIApp.swift; sourceTree = "<group>"; };
 		3628DFDA2A1833BB0006F12C /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
 		3628DFDC2A1833BC0006F12C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3628DFDE2A1833BC0006F12C /* TestingApolloAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestingApolloAPI.entitlements; sourceTree = "<group>"; };
 		3628DFE02A1833BC0006F12C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		364A780A2A1865B20002ADE8 /* TestingApolloAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TestingApolloAPI.entitlements; path = TestingApolloAPI/TestingApolloAPI.entitlements; sourceTree = SOURCE_ROOT; };
 		36C61ADC2A18546600930F60 /* TestingVIewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVIewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,10 +54,9 @@
 		3628DFD72A1833BB0006F12C /* TestingApolloAPI */ = {
 			isa = PBXGroup;
 			children = (
+				364A780A2A1865B20002ADE8 /* TestingApolloAPI.entitlements */,
 				36C61ADB2A18544F00930F60 /* App */,
 				36C61ADA2A18544300930F60 /* TestingView */,
-				3628DFDE2A1833BC0006F12C /* TestingApolloAPI.entitlements */,
-				3628DFDF2A1833BC0006F12C /* Preview Content */,
 			);
 			path = TestingApolloAPI;
 			sourceTree = "<group>";
@@ -84,6 +83,7 @@
 			children = (
 				3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */,
 				3628DFDC2A1833BC0006F12C /* Assets.xcassets */,
+				3628DFDF2A1833BC0006F12C /* Preview Content */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 				CODE_SIGN_ENTITLEMENTS = TestingApolloAPI/TestingApolloAPI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestingApolloAPI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TestingApolloAPI/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -349,7 +349,7 @@
 				CODE_SIGN_ENTITLEMENTS = TestingApolloAPI/TestingApolloAPI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestingApolloAPI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TestingApolloAPI/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
