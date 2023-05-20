@@ -1,8 +1,4 @@
 .DS_Store
-/Packages
-/**/xcuserdata/
-/**/xcshareddata/
-.swiftpm/config/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
-/NetworkLayer
+**/xcuserdata
+**/xcshareddata

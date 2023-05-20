@@ -1,8 +1,7 @@
-query CountOfFilms {
+query ListOfTitles {
   allFilms {
     films {
       title
-			director
     }
   }
 }
