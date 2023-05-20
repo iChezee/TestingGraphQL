@@ -23,7 +23,7 @@ let package = Package(
               .product(name: "Apollo", package: "apollo-ios")
             ]),
         .testTarget(
-          name: "Database",
+          name: "DatabaseTests",
           dependencies: ["Database", "NetworkLayer",
                          .product(name: "Apollo", package: "apollo-ios")
           ])
