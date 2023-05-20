@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3628DFD92A1833BB0006F12C /* TestingApolloAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */; };
-		3628DFDB2A1833BB0006F12C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628DFDA2A1833BB0006F12C /* ContentView.swift */; };
+		3628DFDB2A1833BB0006F12C /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628DFDA2A1833BB0006F12C /* TestingView.swift */; };
 		3628DFDD2A1833BC0006F12C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3628DFDC2A1833BC0006F12C /* Assets.xcassets */; };
 		3628DFE12A1833BC0006F12C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3628DFE02A1833BC0006F12C /* Preview Assets.xcassets */; };
+		36C61ADD2A18546600930F60 /* TestingVIewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C61ADC2A18546600930F60 /* TestingVIewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3628DFD52A1833BB0006F12C /* TestingApolloAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingApolloAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingApolloAPIApp.swift; sourceTree = "<group>"; };
-		3628DFDA2A1833BB0006F12C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3628DFDA2A1833BB0006F12C /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
 		3628DFDC2A1833BC0006F12C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3628DFDE2A1833BC0006F12C /* TestingApolloAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestingApolloAPI.entitlements; sourceTree = "<group>"; };
 		3628DFE02A1833BC0006F12C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36C61ADC2A18546600930F60 /* TestingVIewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVIewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +54,8 @@
 		3628DFD72A1833BB0006F12C /* TestingApolloAPI */ = {
 			isa = PBXGroup;
 			children = (
-				3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */,
-				3628DFDA2A1833BB0006F12C /* ContentView.swift */,
-				3628DFDC2A1833BC0006F12C /* Assets.xcassets */,
+				36C61ADB2A18544F00930F60 /* App */,
+				36C61ADA2A18544300930F60 /* TestingView */,
 				3628DFDE2A1833BC0006F12C /* TestingApolloAPI.entitlements */,
 				3628DFDF2A1833BC0006F12C /* Preview Content */,
 			);
@@ -69,6 +70,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		36C61ADA2A18544300930F60 /* TestingView */ = {
+			isa = PBXGroup;
+			children = (
+				3628DFDA2A1833BB0006F12C /* TestingView.swift */,
+				36C61ADC2A18546600930F60 /* TestingVIewViewModel.swift */,
+			);
+			path = TestingView;
+			sourceTree = "<group>";
+		};
+		36C61ADB2A18544F00930F60 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */,
+				3628DFDC2A1833BC0006F12C /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3628DFE42A1833BC0006F12C /* Build configuration list for PBXNativeTarget "TestingApolloAPI" */;
 			buildPhases = (
+				369A65902A184E690063F0ED /* [GraphQL] GenerateNetworkLayer */,
 				3628DFD12A1833BB0006F12C /* Sources */,
 				3628DFD22A1833BB0006F12C /* Frameworks */,
 				3628DFD32A1833BB0006F12C /* Resources */,
@@ -85,6 +105,8 @@
 			dependencies = (
 			);
 			name = TestingApolloAPI;
+			packageProductDependencies = (
+			);
 			productName = TestingApolloAPI;
 			productReference = 3628DFD52A1833BB0006F12C /* TestingApolloAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +135,8 @@
 				Base,
 			);
 			mainGroup = 3628DFCC2A1833BB0006F12C;
+			packageReferences = (
+			);
 			productRefGroup = 3628DFD62A1833BB0006F12C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,13 +158,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		369A65902A184E690063F0ED /* [GraphQL] GenerateNetworkLayer */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[GraphQL] GenerateNetworkLayer";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ./Apollo\n./apollo-ios-cli generate\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3628DFD12A1833BB0006F12C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3628DFDB2A1833BB0006F12C /* ContentView.swift in Sources */,
+				3628DFDB2A1833BB0006F12C /* TestingView.swift in Sources */,
 				3628DFD92A1833BB0006F12C /* TestingApolloAPIApp.swift in Sources */,
+				36C61ADD2A18546600930F60 /* TestingVIewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +332,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.illiahorevoi.TestingApolloAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,10 +370,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.illiahorevoi.TestingApolloAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

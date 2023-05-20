@@ -1,0 +1,27 @@
+{
+  "schemaNamespace" : "NetworkLayer",
+  "input" : {
+    "operationSearchPaths" : [
+      "../**/**/**/**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "./NetworkLayer.graphqls"
+    ]
+  },
+  "output" : {
+    "schemaTypes" : {
+      "moduleType" : {
+          "swiftPackageManager" : {}
+      },
+      "path" : "../NetworkLayer",
+    },
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}
