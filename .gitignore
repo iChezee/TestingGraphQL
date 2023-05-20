@@ -2,3 +2,4 @@
 .netrc
 **/xcuserdata
 **/xcshareddata
+/NetworkLayer
