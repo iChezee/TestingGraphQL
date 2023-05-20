@@ -2,7 +2,7 @@
   "schemaNamespace" : "NetworkLayer",
   "input" : {
     "operationSearchPaths" : [
-      "../**/**/**/**/*.graphql"
+      "../Apollo/Operations/*.graphql"
     ],
     "schemaSearchPaths" : [
       "./*.graphqls"
