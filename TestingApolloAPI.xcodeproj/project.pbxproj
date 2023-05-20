@@ -189,7 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ./Apollo\n./apollo-ios-cli generate\n";
+			shellScript = "#Create NetworkLayer by ApolloCodegen since Xcode 14.3 has some issue with ApolloCLI plugin\ncd ./Apollo\n./apollo-ios-cli generate\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

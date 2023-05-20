@@ -3,6 +3,9 @@ import NetworkLayer
 import Apollo
 
 public class SearchInteractor {
+  
+  // TODO: Figure out what a problem with network
+  // TODO: Think does it need own DTO's for interl use
   let client = ApolloClient(url: URL(string: "https://swapi-graphql.netlify.app/.netlify/functions/index")!)
   
   public init() {
