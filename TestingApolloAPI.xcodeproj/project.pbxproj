@@ -11,6 +11,7 @@
 		3628DFDB2A1833BB0006F12C /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628DFDA2A1833BB0006F12C /* TestingView.swift */; };
 		3628DFDD2A1833BC0006F12C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3628DFDC2A1833BC0006F12C /* Assets.xcassets */; };
 		3628DFE12A1833BC0006F12C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3628DFE02A1833BC0006F12C /* Preview Assets.xcassets */; };
+		36786A4B2A18723A0077EF0B /* LocalDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 36786A4A2A18723A0077EF0B /* LocalDatabase */; };
 		36C61ADD2A18546600930F60 /* TestingVIewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C61ADC2A18546600930F60 /* TestingVIewViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		3628DFDC2A1833BC0006F12C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3628DFE02A1833BC0006F12C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		364A780A2A1865B20002ADE8 /* TestingApolloAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TestingApolloAPI.entitlements; path = TestingApolloAPI/TestingApolloAPI.entitlements; sourceTree = SOURCE_ROOT; };
+		36786A4C2A1876940077EF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36C61ADC2A18546600930F60 /* TestingVIewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVIewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36786A4B2A18723A0077EF0B /* LocalDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				3628DFD72A1833BB0006F12C /* TestingApolloAPI */,
 				3628DFD62A1833BB0006F12C /* Products */,
+				36786A432A1870110077EF0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		36786A432A1870110077EF0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36C61ADA2A18544300930F60 /* TestingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +94,7 @@
 			children = (
 				3628DFD82A1833BB0006F12C /* TestingApolloAPIApp.swift */,
 				3628DFDC2A1833BC0006F12C /* Assets.xcassets */,
+				36786A4C2A1876940077EF0B /* Info.plist */,
 				3628DFDF2A1833BC0006F12C /* Preview Content */,
 			);
 			path = App;
@@ -106,6 +118,7 @@
 			);
 			name = TestingApolloAPI;
 			packageProductDependencies = (
+				36786A4A2A18723A0077EF0B /* LocalDatabase */,
 			);
 			productName = TestingApolloAPI;
 			productReference = 3628DFD52A1833BB0006F12C /* TestingApolloAPI.app */;
@@ -314,6 +327,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestingApolloAPI/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingApolloAPI/App/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -352,6 +366,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestingApolloAPI/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingApolloAPI/App/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -401,6 +416,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36786A4A2A18723A0077EF0B /* LocalDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocalDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3628DFCD2A1833BB0006F12C /* Project object */;
 }

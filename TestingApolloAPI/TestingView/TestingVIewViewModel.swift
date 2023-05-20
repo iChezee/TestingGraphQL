@@ -1,8 +1,8 @@
 import Foundation
-import Database
+import LocalDatabase
 
 class TestingViewViewModel: ObservableObject {
   init() {
-    let _ = LocalDatabase()
+    let _ = SearchInteractor()
   }
 }

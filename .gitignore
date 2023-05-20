@@ -1,5 +1,8 @@
-TestingApolloAPI.xcworkspace/xcuserdata/
-TestingApolloAPI.xcworkspace/xcshareddata/
-TestingApolloAPI.xcodeproj/xcshareddata/
-TestingApolloAPI.xcodeproj/xcuserdata/
+.DS_Store
+/Packages
+/**/xcuserdata/
+/**/xcshareddata/
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
 /NetworkLayer

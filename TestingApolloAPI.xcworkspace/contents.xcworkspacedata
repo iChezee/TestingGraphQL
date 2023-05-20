@@ -8,7 +8,7 @@
       location = "group:NetworkLayer">
    </FileRef>
    <FileRef
-      location = "group:Database">
+      location = "group:LocalDatabase">
    </FileRef>
    <FileRef
       location = "container:TestingApolloAPI.xcodeproj">
