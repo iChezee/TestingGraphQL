@@ -30,7 +30,6 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
     case "Species": return NetworkLayer.Objects.Species
     case "Starship": return NetworkLayer.Objects.Starship
     case "Vehicle": return NetworkLayer.Objects.Vehicle
-    case "FilmSpeciesConnection": return NetworkLayer.Objects.FilmSpeciesConnection
     default: return nil
     }
   }
